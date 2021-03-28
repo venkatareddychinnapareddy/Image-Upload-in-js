@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+<link rel="stylesheet" href="Bootstrap/css/font-awesome-5.8.1.css">
+<link rel="stylesheet" href="Bootstrap/css/bootstrap.css">
+<link rel="stylesheet" href="Bootstrap/css/mdb.css">
+<link rel="stylesheet" href="Bootstrap/css/style.css">
+            <!-- local css file  -->
+<link rel="stylesheet" href="style.css">
+<style>
+  .img-card{
+    box-shadow:  0 5px 10px black;
+  }
+</style>
+<title>Image Upload</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-dark bg-dark mb-3">
+      <a href="" class="navbar-brand">Image Upload</a>
+  </nav>
+
+  <!----------Image Upload------->
+   
+  <div class="container mt-3">
+    <div class="row">
+      <div class="col-md-6 m-auto">
+        <div class="card">
+          <div class="card-header bg-primary text-white"> 
+              <h2>Image Upload</h2>
+          </div>
+          <div class="card-body">
+            <form action="" id="upload-form" enctype="multipart/form-data">
+            <div>
+              <input class="form-control form-control-md" id="customFile" type="file">
+              <label for="customFile" class="form-label"></label>
+            </div>
+            <div>
+              <input type="submit" value="upload" class="btn btn-primary">
+              <button class="btn btn-danger" id="remove-btn">Remove all</button>
+            </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+      <!-----------Images data----------->
+
+      <div class="container mt-3">
+        <div class="row" id="card-row">
+          
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+<script src="Bootstrap/js/jQuery-3.5.1.min.js"></script>
+<script src="Bootstrap/js/bootstrap.min.js"></script>
+<script src="Bootstrap/js/popper.min.js"></script>
+<script src="Bootstrap/js/mdb.min.js"></script>
+
+    <!-- local js file -->
+<script src="app.js"></script>
+</body>
+</html>
